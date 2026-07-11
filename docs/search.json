@@ -1,0 +1,9 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Estimated Latent Scores and Sum Scores",
+    "section": "",
+    "text": "Welcome to my visualization site. Below is an interactive scatterplot. You can hover over the points, zoom in, and pan around.\n\nlibrary(plotly)\n\n# Simulating a bivariate distribution of latent factors\nset.seed(42)\nfactor1 &lt;- rnorm(500, mean = 0, sd = 1)\nfactor2 &lt;- 0.7 * factor1 + rnorm(500, mean = 0, sd = 0.7)\n\n# Creating the interactive plotly graph\nfig &lt;- plot_ly(\n  x = ~factor1, \n  y = ~factor2, \n  type = \"scatter\", \n  mode = \"markers\",\n  marker = list(size = 6, color = \"rgba(70, 130, 180, 0.7)\", line = list(color = \"white\", width = 0.5))\n) %&gt;%\n  layout(\n    title = \"Interactive Latent Space\",\n    xaxis = list(title = \"Latent Factor 1 (θ₁)\"),\n    yaxis = list(title = \"Latent Factor 2 (θ₂)\")\n  )\n\nfig"
+  }
+]
