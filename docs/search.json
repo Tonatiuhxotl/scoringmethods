@@ -4,6 +4,6 @@
     "href": "index.html",
     "title": "Estimated Latent Scores and Sum Scores",
     "section": "",
-    "text": "Welcome to my visualization site. Below you can play around with different conditions to see how different scoring strategies for latent variables perform to recover structural parameters.\n\n\nReferences:"
+    "text": "Welcome to my visualization site. Below you can play around with different conditions to see how different scoring strategies for latent variables perform to recover structural parameters.\n\n&lt;p&gt;width=\"100%\"&lt;/p&gt;\n&lt;p&gt;height=\"700px\"&lt;/p&gt;\n&lt;p&gt;style=\"border: none; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);\" allow=\"fullscreen\" loading=\"lazy\"&gt;&lt;/p&gt;\n\nReferences:"
   }
 ]
