@@ -4,43 +4,10 @@ format: html
 editor: visual
 ---
 
-Welcome to my visualization site. Below is an interactive scatterplot. You can hover over the points, zoom in, and pan around.
+Welcome to my visualization site. Below you can play around with different conditions to see how different scoring strategies for latent variables perform to recover structural parameters.
 
-```{r}
-#| label: factor-plot
-#| warning: false
-#| message: false
-#| echo: true
-
-library(plotly)
-
-# Simulating a bivariate distribution of latent factors
-set.seed(42)
-factor1 <- rnorm(500, mean = 0, sd = 1)
-factor2 <- 0.7 * factor1 + rnorm(500, mean = 0, sd = 0.7)
-
-# Creating the interactive plotly graph
-fig <- plot_ly(
-  x = ~factor1, 
-  y = ~factor2, 
-  type = "scatter", 
-  mode = "markers",
-  marker = list(size = 6, color = "rgba(70, 130, 180, 0.7)", line = list(color = "white", width = 0.5))
-) %>%
-  layout(
-    title = "Interactive Latent Space",
-    xaxis = list(title = "Latent Factor 1 (θ₁)"),
-    yaxis = list(title = "Latent Factor 2 (θ₂)")
-  )
-
-fig
-```
-
-<iframe src="https://tonatiuhxotl.shinyapps.io/scoringmethods251/" 
-        width="100%" 
-        height="700px" 
-        style="border: none; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
-        allow="fullscreen" loading="lazy">
+<iframe src="https://tonatiuhxotl.shinyapps.io/scoringmethods251/" width="100%" height="700px" style="border: none; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" allow="fullscreen" loading="lazy">
 
 </iframe>
 
+References:
