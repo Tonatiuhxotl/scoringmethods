@@ -5,7 +5,7 @@ account: tonatiuhxotl
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 17603176
-bundleId: 12254528
+bundleId: 12295652
 url: https://tonatiuhxotl.shinyapps.io/scoringmethods251/
 version: 1
 asMultiple: FALSE

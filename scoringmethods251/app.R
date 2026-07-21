@@ -22,7 +22,8 @@ library(lavaan)
 ui <- fluidPage(
   sidebarLayout(
     sidebarPanel(
-      h4("Latent Outcome Variable"),
+      h3("Estimated Latent Scores vs Sum Scores"),
+      h4("Parameter recovery in a mediation model"),
       #selectInput("scenario", "Select Scenario:", 
       #            choices = c("Case 1: Latent Outcome (Y)", 
       #                        "Case 2: Latent Treatment Propensity (X)")),
